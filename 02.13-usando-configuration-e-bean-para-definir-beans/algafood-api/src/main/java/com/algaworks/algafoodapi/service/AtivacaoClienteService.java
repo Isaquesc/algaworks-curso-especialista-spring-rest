@@ -12,7 +12,7 @@ public class AtivacaoClienteService {
     @Autowired
     public AtivacaoClienteService(Notificador notificador) {
         this.notificador = notificador;
-        System.out.println("Contrutor AtivacaoClienteService: " + notificador);
+        System.out.println("Contrutor Ativacao Cliente Service: " + notificador);
     }
 
     public Response ativar(Cliente cliente) {
