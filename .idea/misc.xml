@@ -8,8 +8,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/02.14-conhecendo -os-pontos-de-injecão-e-a-anotacao-autowired/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.13-usando-configuration-e-bean-para-definir-beans/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.14-conhecendo-pontos-de-injecao-e-a-anotacao-autowired/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.15-dependencia-opcional-com-autowired/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="temurin-17" project-jdk-type="JavaSDK" />
 </project>

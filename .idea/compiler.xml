@@ -7,16 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algafood-api (2)" />
         <module name="algafood-api" />
+        <module name="algafood-api (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="algafood-api" target="17" />
+      <module name="algafood-api (1)" target="17" />
+      <module name="algafood-api (2)" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="algafood-api" options="-parameters" />
+      <module name="algafood-api (1)" options="-parameters" />
+      <module name="algafood-api (2)" options="-parameters" />
     </option>
   </component>
 </project>
