@@ -15,10 +15,6 @@ public class AtivacaoClienteService {
     @Autowired
     private List<Notificador> notificador;
 
-    public AtivacaoClienteService() {
-        System.out.println("Segundo Construtor");
-    }
-
     public Response ativar(Cliente cliente) {
         cliente.ativar();
 
