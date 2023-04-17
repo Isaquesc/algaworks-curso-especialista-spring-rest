@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/02.15-dependencia-opcional-com-autowired/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.16-ambiguidade-de-beans-e-injecao-de-lista-de-beans/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.17-desambiguacao-de-beans-com-primary/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.17-desambiguação-de-beans-com-primary/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
