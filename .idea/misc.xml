@@ -4,6 +4,7 @@
     <option name="show" value="ASK" />
     <option name="description" value="" />
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -16,6 +17,7 @@
         <option value="$PROJECT_DIR$/02.17-desambiguação-de-beans-com-primary/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.18-desambiguacao-de-beans-com-quilifier/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.19-desambiguacao-de-beans-com-anotacao-customizada/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.20-mudando-o-comportamento-da-aplicacao-com-spring-profiles/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

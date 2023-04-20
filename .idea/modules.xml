@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/02.19-desambiguacao-de-beans-com-anotacao-customizada/algafood-api/algafood-api.iml" filepath="$PROJECT_DIR$/02.19-desambiguacao-de-beans-com-anotacao-customizada/algafood-api/algafood-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/02.13-usando-configuration-e-bean-para-definir-beans/algafood-api/algafood-api (1).iml" filepath="$PROJECT_DIR$/02.13-usando-configuration-e-bean-para-definir-beans/algafood-api/algafood-api (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/02.14-conhecendo-pontos-de-injecao-e-a-anotacao-autowired/algafood-api/algafood-api (2).iml" filepath="$PROJECT_DIR$/02.14-conhecendo-pontos-de-injecao-e-a-anotacao-autowired/algafood-api/algafood-api (2).iml" />
       <module fileurl="file://$PROJECT_DIR$/02.15-dependencia-opcional-com-autowired/algafood-api/algafood-api (3).iml" filepath="$PROJECT_DIR$/02.15-dependencia-opcional-com-autowired/algafood-api/algafood-api (3).iml" />
