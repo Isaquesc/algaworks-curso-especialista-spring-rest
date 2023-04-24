@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/02.19-desambiguacao-de-beans-com-anotacao-customizada/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.20-mudando-o-comportamento-da-aplicacao-com-spring-profiles/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.21-criando-metodos-de-callback-do-ciclo-de-vida-dos-beans/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.22-publicando-e-consumindo-eventos-customizados/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

@@ -32,4 +32,14 @@ public class Cliente {
     public void ativar(){
         this.ativo = true;
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", telefone='" + telefone + '\'' +
+                ", ativo=" + ativo +
+                '}';
+    }
 }

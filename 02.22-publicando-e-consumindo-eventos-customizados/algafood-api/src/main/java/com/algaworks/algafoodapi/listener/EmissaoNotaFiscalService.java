@@ -9,14 +9,10 @@ import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NotificacaoService {
-
-    @TipoNotificador(NivelUrgencia.URGENTE)
-    @Autowired
-    private Notificador notificador;
+public class EmissaoNotaFiscalService {
 
     @EventListener
     public void clienteAtivadoListener(ClienteAtivadoEvent event){
-        notificador.notificar(event.getCliente(), "Seu cadastro no sistema está ativo");
+        System.out.println("Emitindo nota fiscal para cliente " + event.getCliente().getNome());
     }
 }

@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 public class NotificadorEmailMOCK implements Notificador {
 
     @Override
-    public Response notificar(Cliente cliente, String mensagem) {
-        return new Response(cliente, "email",null, "MOCK: " + mensagem);
+    public void notificar(Cliente cliente, String mensagem) {
+        System.out.println(new Response(cliente, "email",null, "MOCK: " + mensagem));
     }
 
 }

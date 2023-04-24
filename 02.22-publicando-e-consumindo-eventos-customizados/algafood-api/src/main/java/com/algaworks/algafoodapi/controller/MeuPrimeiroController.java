@@ -18,7 +18,7 @@ public class MeuPrimeiroController {
     }
 
     @GetMapping("/hello")
-    public Response hello(){
-        return ativacaoClienteService.ativar(new Cliente("Isaque", "isaquedeco@icloud.com", "11958788416"));
+    public void hello(){
+        ativacaoClienteService.ativar(new Cliente("Isaque", "isaquedeco@icloud.com", "11958788416"));
     }
 }

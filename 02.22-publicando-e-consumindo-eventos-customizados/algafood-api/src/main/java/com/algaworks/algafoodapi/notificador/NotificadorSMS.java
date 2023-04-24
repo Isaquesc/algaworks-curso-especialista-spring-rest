@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 public class NotificadorSMS implements Notificador {
 
     @Override
-    public Response notificar(Cliente cliente, String mensagem) {
-        return new Response(cliente, "sms",null, mensagem);
+    public void notificar(Cliente cliente, String mensagem) {
+        System.out.println(new Response(cliente, "sms",null, mensagem));
     }
 
 }

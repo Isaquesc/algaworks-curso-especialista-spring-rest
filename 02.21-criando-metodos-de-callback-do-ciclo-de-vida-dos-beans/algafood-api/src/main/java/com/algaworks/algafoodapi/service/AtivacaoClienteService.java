@@ -21,20 +21,20 @@ public class AtivacaoClienteService {
     @Autowired
     private Notificador notificador;
 
-//    @PostConstruct
-    public void init(){
+    //    @PostConstruct
+    public void init() {
         System.out.println("Init");
     }
 
-//    @PreDestroy
-    public void destroy(){
+    //    @PreDestroy
+    public void destroy() {
         System.out.println("Destroy");
     }
 
     public Response ativar(Cliente cliente) {
         cliente.ativar();
 
-      return notificador.notificar(cliente,"Seu cadastro no sistema está ativo");
+        return notificador.notificar(cliente, "Seu cadastro no sistema está ativo");
     }
 
 }

@@ -4,5 +4,5 @@ import com.algaworks.algafoodapi.model.Cliente;
 import com.algaworks.algafoodapi.model.Response;
 
 public interface Notificador {
-    Response notificar(Cliente cliente, String mensagem);
+    void notificar(Cliente cliente, String mensagem);
 }
