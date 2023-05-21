@@ -6,6 +6,8 @@ import com.algaworks.algafoodapi.service.AtivacaoClienteService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.PostConstruct;
+
 @RestController
 public class MeuPrimeiroController {
 
@@ -13,8 +15,10 @@ public class MeuPrimeiroController {
 
     public MeuPrimeiroController(AtivacaoClienteService ativacaoClienteService) {
         this.ativacaoClienteService = ativacaoClienteService;
-
-        System.out.println("Contrutor MeuPrimeiroController: " + ativacaoClienteService);
+    }
+    @PostConstruct
+    public void init(){
+        System.out.println("INICIANDO: MeuPrimeiroController");
     }
 
     @GetMapping("/hello")

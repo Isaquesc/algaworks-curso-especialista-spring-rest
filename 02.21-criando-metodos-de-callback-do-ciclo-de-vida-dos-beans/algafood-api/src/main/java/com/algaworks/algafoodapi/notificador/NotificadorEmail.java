@@ -10,10 +10,17 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+
 @TipoNotificador(value = NivelUrgencia.NORMAL)
 @Component
 @Profile("prd")
 public class NotificadorEmail implements Notificador {
+
+    @PostConstruct
+    public void init(){
+        System.out.println("INICIANDO: NotificadorEmailPRD");
+    }
 
     @Override
     public Response notificar(Cliente cliente, String mensagem) {
