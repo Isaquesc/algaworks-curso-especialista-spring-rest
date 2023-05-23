@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/02.20-mudando-o-comportamento-da-aplicacao-com-spring-profiles/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.21-criando-metodos-de-callback-do-ciclo-de-vida-dos-beans/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.22-publicando-e-consumindo-eventos-customizados/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.23-configurando-projetos-spring-boot-com-application-properties/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.25-propriedades-customizadas-com-value/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
