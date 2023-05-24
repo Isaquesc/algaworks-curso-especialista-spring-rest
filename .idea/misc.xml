@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/02.23-configurando-projetos-spring-boot-com-application-properties/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.25-propriedades-customizadas-com-value/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.26-acessando-propriedades-com-configuration-properties/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/02.27-alterando-configuração-do-ambiente-com-spring-profiles/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
