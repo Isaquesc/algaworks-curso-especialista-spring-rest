@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/02.26-acessando-propriedades-com-configuration-properties/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/02.27-alterando-configuração-do-ambiente-com-spring-profiles/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/03.03-adicionando-jpa-e-configurando-o-datasource/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/03.04-mapeando-entidades-jpa/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
