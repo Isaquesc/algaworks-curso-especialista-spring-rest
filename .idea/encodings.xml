@@ -33,5 +33,6 @@
     <file url="file://$PROJECT_DIR$/02.27-alterando-configuração-do-ambiente-com-spring-profiles/algafood-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03.03-adicionando-jpa-e-configurando-o-datasource/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03.04-mapeando-entidades-jpa/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03.05-criando-tabelas-banco-de-dados-a-partir-das-entidades/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
