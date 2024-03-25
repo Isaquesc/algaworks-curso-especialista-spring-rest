@@ -4,6 +4,7 @@ import com.algaworks.algafoodapi.anotacao.TipoNotificador;
 import com.algaworks.algafoodapi.enumerados.NivelUrgencia;
 import com.algaworks.algafoodapi.model.Cliente;
 import com.algaworks.algafoodapi.model.Response;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
