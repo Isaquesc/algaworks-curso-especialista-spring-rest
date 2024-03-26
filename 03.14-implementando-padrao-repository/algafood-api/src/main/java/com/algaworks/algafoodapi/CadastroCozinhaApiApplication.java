@@ -2,6 +2,7 @@ package com.algaworks.algafoodapi;
 
 import com.algaworks.algafoodapi.jpa.CadastroCozinha;
 import com.algaworks.algafoodapi.model.Cozinha;
+import com.algaworks.algafoodapi.repository.CozinhaRepositoryImpl;
 import org.hibernate.annotations.common.util.impl.LoggerFactory;
 import org.jboss.logging.Logger;
 import org.springframework.boot.WebApplicationType;
@@ -18,29 +19,25 @@ public class CadastroCozinhaApiApplication {
                 .web(WebApplicationType.NONE)
                 .run(args);
 
-        CadastroCozinha beanCadastroCozinha = applicationContext.getBean(CadastroCozinha.class);
+        CozinhaRepositoryImpl repository = applicationContext.getBean(CozinhaRepositoryImpl.class);
 
 //        CADASTRAR COZINHA
         Cozinha primeiraCozinha = new Cozinha();
         primeiraCozinha.setNome("Coreana");
 
-        beanCadastroCozinha
-                .save(primeiraCozinha);
+        repository.save(primeiraCozinha);
 
         Cozinha segundaCozinha = new Cozinha();
         segundaCozinha.setNome("Mexicana");
 
-        beanCadastroCozinha
-                .save(segundaCozinha);
+        repository.save(segundaCozinha);
 
 //         BUSCAS TODAS COZINHAS
-        beanCadastroCozinha
-                .findAll()
+        repository.findAll()
                 .forEach(System.out::println);
 
 //         BUSCAS POR ID
-        Cozinha cozinha = beanCadastroCozinha
-                .findById(3L);
+        Cozinha cozinha = repository.findById(3L);
         System.out.println(cozinha);
 
 //         ATUALIZANDO COZINHA
@@ -48,13 +45,12 @@ public class CadastroCozinhaApiApplication {
         atualizandoCozinha.setId(4L);
         atualizandoCozinha.setNome("Americana");
 
-        System.out.println(beanCadastroCozinha
+        System.out.println(repository
                 .save(atualizandoCozinha));
 
 //          REMOVENDO
         Cozinha removerCozinha = new Cozinha();
         removerCozinha.setId(1L);
-        beanCadastroCozinha
-                .remove(removerCozinha);
+        repository.remove(removerCozinha);
     }
 }
