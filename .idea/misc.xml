@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/03.04-mapeando-entidades-jpa/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/03.05-criando-tabelas-banco-de-dados-a-partir-das-entidades/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/03.08-consultando-objetos-no-banco-de-dados/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/03.08-cadastrando-objetos-no-banco-de-dados/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
