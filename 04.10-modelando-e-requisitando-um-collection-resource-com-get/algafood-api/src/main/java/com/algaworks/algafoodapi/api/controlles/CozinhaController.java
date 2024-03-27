@@ -14,16 +14,16 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RequestMapping("/cozinhas")
 public class CozinhaController {
 
-    private final CozinhaRepository cozinhaRepository;
+    private final CozinhaRepository repository;
 
     @Autowired
-    public CozinhaController(CozinhaRepository cozinhaRepository) {
-        this.cozinhaRepository = cozinhaRepository;
+    public CozinhaController(CozinhaRepository repository) {
+        this.repository = repository;
     }
 
     @RequestMapping(method = GET)
     public List<Cozinha> listar() {
-        return cozinhaRepository.findAll();
+        return repository.findAll();
     }
 
 }
