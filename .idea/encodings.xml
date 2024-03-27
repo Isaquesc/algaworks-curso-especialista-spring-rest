@@ -36,5 +36,6 @@
     <file url="file://$PROJECT_DIR$/03.05-criando-tabelas-banco-de-dados-a-partir-das-entidades/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03.08-cadastrando-objetos-no-banco-de-dados/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03.14-implementando-padrao-repository/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03.17-mapeando-relacionamento-com-manytoone/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
