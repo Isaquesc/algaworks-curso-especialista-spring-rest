@@ -31,6 +31,7 @@
         <option value="$PROJECT_DIR$/03.08-cadastrando-objetos-no-banco-de-dados/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/03.14-implementando-padrao-repository/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/03.17-mapeando-relacionamento-com-manytoone/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/04.10-modelando-e-requisitando-um-collection-resource-com-get/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
