@@ -33,6 +33,7 @@
         <option value="$PROJECT_DIR$/03.17-mapeando-relacionamento-com-manytoone/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.10-modelando-e-requisitando-um-collection-resource-com-get/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.13-implementado-content-negotiation-para-retornar-json-ou-xml/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/04.14-consultando-singleton-resource-com-get-pathvariable/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
