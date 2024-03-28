@@ -7,30 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algafood-api-artifactId" />
-        <module name="algafood-api-artifactId (1)" />
+        <module name="algafood-api-artifactId (10)" />
         <module name="algafood-api-artifactId (2)" />
-        <module name="algafood-api-artifactId (3)" />
-        <module name="algafood-api (6)" />
         <module name="algafood-api-artifactId (4)" />
         <module name="algafood-api (7)" />
-        <module name="algafood-api-artifactId (5)" />
-        <module name="algafood-api (8)" />
         <module name="algafood-api-artifactId (6)" />
         <module name="algafood-api (9)" />
-        <module name="algafood-api-artifactId (7)" />
-        <module name="algafood-api (2)" />
-        <module name="algafood-api (13)" />
         <module name="algafood-api-artifactId (8)" />
         <module name="algafood-api (3)" />
         <module name="algafood-api (14)" />
-        <module name="algafood-api-artifactId (9)" />
-        <module name="algafood-api (4)" />
         <module name="algafood-api (5)" />
         <module name="algafood-api (10)" />
-        <module name="algafood-api (11)" />
         <module name="algafood-api (1)" />
         <module name="algafood-api (12)" />
+        <module name="algafood-api-artifactId" />
+        <module name="algafood-api-artifactId (1)" />
+        <module name="algafood-api-artifactId (3)" />
+        <module name="algafood-api (6)" />
+        <module name="algafood-api-artifactId (5)" />
+        <module name="algafood-api (8)" />
+        <module name="algafood-api-artifactId (7)" />
+        <module name="algafood-api (2)" />
+        <module name="algafood-api (13)" />
+        <module name="algafood-api-artifactId (9)" />
+        <module name="algafood-api (4)" />
+        <module name="algafood-api (11)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -56,6 +57,7 @@
       <module name="algafood-api (9)" options="-parameters" />
       <module name="algafood-api-artifactId" options="-parameters" />
       <module name="algafood-api-artifactId (1)" options="-parameters" />
+      <module name="algafood-api-artifactId (10)" options="-parameters" />
       <module name="algafood-api-artifactId (2)" options="-parameters" />
       <module name="algafood-api-artifactId (3)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
