@@ -43,5 +43,6 @@
     <file url="file://$PROJECT_DIR$/04.15-customizando-as-representacoes-xml-e-json/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04.19-definindo-status-da-resposta-http-com-responsestatus/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04.20-manipulando-resposta-http-com-responseentity/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04.21-corrigindo-status-http-para-resouce-inexistente/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
