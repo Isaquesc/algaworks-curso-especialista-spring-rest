@@ -38,6 +38,7 @@
         <option value="$PROJECT_DIR$/04.19-definindo-status-da-resposta-http-com-responsestatus/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.20-manipulando-resposta-http-com-responseentity/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.21-corrigindo-status-http-para-resouce-inexistente/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/04.22-modelando-e-implementando-a-inclusao-de-recursos-com-post/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

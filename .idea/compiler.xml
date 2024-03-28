@@ -33,6 +33,7 @@
         <module name="algafood-api-artifactId (11)" />
         <module name="algafood-api-artifactId (9)" />
         <module name="algafood-api (4)" />
+        <module name="algafood-api-artifactId (13)" />
         <module name="algafood-api (11)" />
       </profile>
     </annotationProcessing>
@@ -62,6 +63,7 @@
       <module name="algafood-api-artifactId (10)" options="-parameters" />
       <module name="algafood-api-artifactId (11)" options="-parameters" />
       <module name="algafood-api-artifactId (12)" options="-parameters" />
+      <module name="algafood-api-artifactId (13)" options="-parameters" />
       <module name="algafood-api-artifactId (2)" options="-parameters" />
       <module name="algafood-api-artifactId (3)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
