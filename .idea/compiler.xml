@@ -24,6 +24,7 @@
         <module name="algafood-api-artifactId (8)" />
         <module name="algafood-api (3)" />
         <module name="algafood-api (14)" />
+        <module name="algafood-api-artifactId (9)" />
         <module name="algafood-api (4)" />
         <module name="algafood-api (5)" />
         <module name="algafood-api (10)" />
@@ -62,6 +63,7 @@
       <module name="algafood-api-artifactId (6)" options="-parameters" />
       <module name="algafood-api-artifactId (7)" options="-parameters" />
       <module name="algafood-api-artifactId (8)" options="-parameters" />
+      <module name="algafood-api-artifactId (9)" options="-parameters" />
     </option>
   </component>
 </project>

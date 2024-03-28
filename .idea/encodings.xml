@@ -40,5 +40,6 @@
     <file url="file://$PROJECT_DIR$/04.10-modelando-e-requisitando-um-collection-resource-com-get/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04.13-implementado-content-negotiation-para-retornar-json-ou-xml/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04.14-consultando-singleton-resource-com-get-pathvariable/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04.15-customizando-as-representacoes-xml-e-json/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
