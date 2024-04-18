@@ -4,7 +4,7 @@ import com.algaworks.algafoodapi.api.model.CozinhaXMLWrapper;
 import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
 import com.algaworks.algafoodapi.domain.model.Cozinha;
 import com.algaworks.algafoodapi.domain.repository.interfaces.CozinhaRepository;
-import com.algaworks.algafoodapi.domain.service.CadastroCozinhaService;
+import com.algaworks.algafoodapi.domain.service.CozinhaService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -22,28 +22,28 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RequestMapping(value = "/cozinhas")
 public class CozinhaController {
 
-    private final CozinhaRepository repository;
 
-    private final CadastroCozinhaService service;
+    private final CozinhaRepository repository;
+    private final CozinhaService service;
 
     @Autowired
-    public CozinhaController(CozinhaRepository repository, CadastroCozinhaService service) {
+    public CozinhaController(CozinhaRepository repository, CozinhaService service) {
         this.repository = repository;
         this.service = service;
     }
 
     @RequestMapping(method = GET)
-    public List<Cozinha> listar() {
+    public List<Cozinha> findAll() {
         return repository.findAll();
     }
 
     @RequestMapping(method = GET, produces = MediaType.APPLICATION_XML_VALUE)
-    public CozinhaXMLWrapper listarXml() {
+    public CozinhaXMLWrapper findAllXML() {
         return new CozinhaXMLWrapper(repository.findAll());
     }
 
     @RequestMapping(value = "{cozinhaId}", method = GET)
-    public ResponseEntity<Cozinha> buscaId(@PathVariable Long cozinhaId) {
+    public ResponseEntity<Cozinha> findByID(@PathVariable Long cozinhaId) {
         Cozinha cozinha = repository.findById(cozinhaId);
         if (cozinha == null)
             return ResponseEntity.notFound().build();
@@ -53,12 +53,12 @@ public class CozinhaController {
 
     @RequestMapping(method = POST)
     @ResponseStatus(HttpStatus.CREATED)
-    public Cozinha adicionar(@RequestBody Cozinha cozinha) {
+    public Cozinha save(@RequestBody Cozinha cozinha) {
         return service.save(cozinha);
     }
 
     @RequestMapping(value = "{cozinhaId}", method = PUT)
-    public ResponseEntity<Cozinha> atualizar(@PathVariable Long cozinhaId,
+    public ResponseEntity<Cozinha> update(@PathVariable Long cozinhaId,
                                              @RequestBody Cozinha cozinha) {
         Cozinha cozinhaAtualizada = repository.findById(cozinhaId);
         if (cozinhaAtualizada == null)
@@ -69,7 +69,7 @@ public class CozinhaController {
     }
 
     @RequestMapping(value = {"{cozinhaId}"}, method = DELETE)
-    public ResponseEntity<Cozinha> remover(@PathVariable Long cozinhaId) {
+    public ResponseEntity<Cozinha> remove(@PathVariable Long cozinhaId) {
         try {
             service.remove(cozinhaId);
             return ResponseEntity.notFound().build();
