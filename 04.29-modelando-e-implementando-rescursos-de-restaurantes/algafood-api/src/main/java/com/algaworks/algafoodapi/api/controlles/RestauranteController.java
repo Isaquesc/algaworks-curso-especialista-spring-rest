@@ -3,7 +3,9 @@ package com.algaworks.algafoodapi.api.controlles;
 import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
 import com.algaworks.algafoodapi.domain.model.Restaurante;
 import com.algaworks.algafoodapi.domain.repository.interfaces.CozinhaRepository;
+import com.algaworks.algafoodapi.domain.repository.interfaces.RestauranteRepository;
 import com.algaworks.algafoodapi.domain.service.RestauranteService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +19,11 @@ public class RestauranteController {
 
     private RestauranteService restauranteservice;
 
+    private RestauranteRepository restauranteRepository;
+
     @Autowired
-    public RestauranteController(RestauranteService restauranteservice, CozinhaRepository cozinhaRepository) {
+    public RestauranteController(RestauranteService restauranteservice, RestauranteRepository restauranteRepository) {
+        this.restauranteRepository = restauranteRepository;
         this.restauranteservice = restauranteservice;
     }
 
@@ -27,7 +32,7 @@ public class RestauranteController {
         return ResponseEntity.ok(restauranteservice.findAll());
     }
 
-    @RequestMapping(value = "/{restauranteId}")
+    @RequestMapping(value = "/{restauranteId}", method = RequestMethod.GET)
     public ResponseEntity<?> findByID(@PathVariable Long restauranteId) {
         Restaurante restaurante = restauranteservice.findById(restauranteId);
 
@@ -44,6 +49,28 @@ public class RestauranteController {
 
             return ResponseEntity.status(HttpStatus.ACCEPTED)
                     .body(save);
+
+        } catch (EntidadeNaoEnconstradaException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
+
+    @RequestMapping(value = "/{restauranteId}", method = RequestMethod.PUT)
+    public ResponseEntity<?> atualizar(@PathVariable Long restauranteId, @RequestBody Restaurante restaurante) {
+        try {
+
+            Restaurante restauranteAtual = restauranteRepository.findById(restauranteId);
+
+            if (restauranteAtual != null){
+                BeanUtils.copyProperties(restaurante, restauranteAtual, "id");
+
+                restauranteAtual = restauranteservice.save(restauranteAtual);
+                return ResponseEntity.ok()
+                        .body(restauranteAtual);
+            }
+
+            return ResponseEntity.notFound()
+                    .build();
 
         } catch (EntidadeNaoEnconstradaException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
