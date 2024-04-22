@@ -45,6 +45,7 @@
         <option value="$PROJECT_DIR$/04.27-implementando-domain-service/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-service/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.29-modelando-e-implementando-consulta-de-rescursos-de-restaurantes/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/04.29-modelando-e-implementando-rescursos-de-restaurantes/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
