@@ -29,12 +29,12 @@ public class RestauranteController {
 
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<List<Restaurante>> findAll() {
-        return ResponseEntity.ok(restauranteservice.findAll());
+        return ResponseEntity.ok(restauranteRepository.findAll());
     }
 
     @RequestMapping(value = "/{restauranteId}", method = RequestMethod.GET)
     public ResponseEntity<?> findByID(@PathVariable Long restauranteId) {
-        Restaurante restaurante = restauranteservice.findById(restauranteId);
+        Restaurante restaurante = restauranteRepository.findById(restauranteId);
 
         if (restaurante == null)
             return ResponseEntity.notFound().build();

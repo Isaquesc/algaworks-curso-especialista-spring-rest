@@ -23,14 +23,6 @@ public class RestauranteService {
         this.restauranteRepository = restauranteRepository;
     }
 
-    public List<Restaurante> findAll() {
-        return restauranteRepository.findAll();
-    }
-
-    public Restaurante findById(Long id) {
-        return restauranteRepository.findById(id);
-    }
-
     public Restaurante save(Restaurante restaurante) {
         Long cozinhaId = restaurante.getCozinha().getId();
         Cozinha cozinha = cozinhaRepository.findById(cozinhaId);

@@ -7,7 +7,7 @@ import java.util.List;
 public interface RestauranteRepository {
     Restaurante save(Restaurante restaurante);
     Restaurante findById(Long id);
-    void remove(Restaurante restaurante);
+    void remove(Long id);
     List<Restaurante> findAll();
 
 }

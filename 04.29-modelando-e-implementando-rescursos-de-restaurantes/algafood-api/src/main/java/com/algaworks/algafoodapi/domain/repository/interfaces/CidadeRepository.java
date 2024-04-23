@@ -7,6 +7,6 @@ import java.util.List;
 public interface CidadeRepository {
     Cidade save(Cidade cidade);
     Cidade findById(Long id);
-    void remove(Cidade cidade);
+    void remove(Long id);
     List<Cidade> findAll();
 }
