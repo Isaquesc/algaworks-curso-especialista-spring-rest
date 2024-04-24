@@ -12,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/restaurantes")
@@ -56,7 +57,8 @@ public class RestauranteController {
     }
 
     @RequestMapping(value = "/{restauranteId}", method = RequestMethod.PUT)
-    public ResponseEntity<?> atualizar(@PathVariable Long restauranteId, @RequestBody Restaurante restaurante) {
+    public ResponseEntity<?> atualizar(@PathVariable Long restauranteId,
+                                       @RequestBody Restaurante restaurante) {
         try {
 
             Restaurante restauranteAtual = restauranteRepository.findById(restauranteId);
@@ -75,5 +77,24 @@ public class RestauranteController {
         } catch (EntidadeNaoEnconstradaException e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+    }
+
+    @RequestMapping(value = "/{restauranteId}", method = RequestMethod.PATCH)
+    public ResponseEntity<?> atualizarParcial(@PathVariable Long restauranteId,
+                                              @RequestBody Map<String, Object> campos){
+        Restaurante restauranteAtual = restauranteRepository.findById(restauranteId);
+
+        if (restauranteAtual == null){
+            return ResponseEntity.notFound().build();
+        }
+        merge(campos, restauranteAtual);
+
+        return atualizar(restauranteId, restauranteAtual);
+    }
+
+    private static void merge(Map<String, Object> campos, Restaurante restauranteDestino) {
+        campos.forEach((nomePropriedade, valorPropriedade) -> {
+            System.out.println(nomePropriedade + " - " + valorPropriedade);
+        });
     }
 }
