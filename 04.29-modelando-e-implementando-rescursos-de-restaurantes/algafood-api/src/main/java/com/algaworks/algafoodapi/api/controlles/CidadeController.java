@@ -76,7 +76,7 @@ public class CidadeController {
     public ResponseEntity<Cidade> remove(@PathVariable Long cidadeId) {
         try {
             cidadeService.remove(cidadeId);
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
 
         } catch (DataIntegrityViolationException e) {
             return ResponseEntity.status(HttpStatus.CONFLICT).build();

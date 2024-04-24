@@ -76,7 +76,7 @@ public class EstadoController {
     public ResponseEntity<Estado> remove(@PathVariable Long estadoId) {
         try {
             estadoService.remove(estadoId);
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
 
         } catch (DataIntegrityViolationException e) {
             return ResponseEntity.status(HttpStatus.CONFLICT).build();

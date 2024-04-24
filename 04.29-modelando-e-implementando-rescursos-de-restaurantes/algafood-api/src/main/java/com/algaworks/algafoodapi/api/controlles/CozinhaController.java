@@ -72,7 +72,7 @@ public class CozinhaController {
     public ResponseEntity<Cozinha> remove(@PathVariable Long cozinhaId) {
         try {
             service.remove(cozinhaId);
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.noContent().build();
 
         } catch (DataIntegrityViolationException e) {
             return ResponseEntity.status(HttpStatus.CONFLICT).build();
