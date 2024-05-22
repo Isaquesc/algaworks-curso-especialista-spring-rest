@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/04.29-modelando-e-implementando-consulta-de-rescursos-de-restaurantes/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/04.29-modelando-e-implementando-rescursos-de-restaurantes/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.01-implementando-consultas-JPQL-repository/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/05.03-criando-repository-com-spring-data-JPA/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

@@ -51,5 +51,6 @@
     <file url="file://$PROJECT_DIR$/04.28-refatorando-a-exclusao-de-cozinhas-para-usar-domain-service/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/04.29-modelando-e-implementando-rescursos-de-restaurantes/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05.01-implementando-consultas-JPQL-repository/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05.03-criando-repository-com-spring-data-JPA/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
