@@ -40,6 +40,7 @@
         <module name="algafood-api (4)" />
         <module name="algafood-api-artifactId (13)" />
         <module name="algafood-api (11)" />
+        <module name="algafood-api-artifactId (19)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -74,6 +75,7 @@
       <module name="algafood-api-artifactId (16)" options="-parameters" />
       <module name="algafood-api-artifactId (17)" options="-parameters" />
       <module name="algafood-api-artifactId (18)" options="-parameters" />
+      <module name="algafood-api-artifactId (19)" options="-parameters" />
       <module name="algafood-api-artifactId (2)" options="-parameters" />
       <module name="algafood-api-artifactId (3)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
