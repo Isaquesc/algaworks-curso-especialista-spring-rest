@@ -25,7 +25,7 @@ public class EstadoService {
 
     public void remove(Long estadoId) {
         try {
-            repository.remove(estadoId);
+            repository.deleteById(estadoId);
         } catch (EmptyResultDataAccessException e) {
             throw new EntidadeNaoEnconstradaException(
                     String.format("Não existe um cadastro de estado com código %d", estadoId));

@@ -62,6 +62,7 @@ public class CozinhaController {
     public ResponseEntity<Cozinha> update(@PathVariable Long cozinhaId,
                                              @RequestBody Cozinha cozinha) {
         Optional<Cozinha> cozinhaAtualizada = repository.findById(cozinhaId);
+
         if (cozinhaAtualizada.isEmpty())
             return ResponseEntity.notFound().build();
 

@@ -10,7 +10,9 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
+import java.util.Optional;
 
 
 @RestController
@@ -34,9 +36,9 @@ public class CidadeController {
 
     @RequestMapping(value = "/{cidadeId}", method = RequestMethod.GET)
     public ResponseEntity<?> findByID(@PathVariable Long cidadeId) {
-        Cidade cidade = cidadeRepository.findById(cidadeId);
+        Optional<Cidade> cidade = cidadeRepository.findById(cidadeId);
 
-        if (cidade == null)
+        if (cidade.isEmpty())
             return ResponseEntity.notFound().build();
 
         return ResponseEntity.ok(cidade);
@@ -57,19 +59,13 @@ public class CidadeController {
 
     @RequestMapping(value = "/{cidadeId}", method = RequestMethod.PUT)
     public ResponseEntity<?> atualizar(@PathVariable Long cidadeId, @RequestBody Cidade cidade) {
-
-
-        Cidade cidadeAtual = cidadeRepository.findById(cidadeId);
+        Cidade cidadeAtual = cidadeRepository.findById(cidadeId).orElse(null);
 
         if (cidadeAtual != null) {
             BeanUtils.copyProperties(cidade, cidadeAtual, "id");
-
-            cidadeAtual = cidadeService.save(cidadeAtual);
-            return ResponseEntity.ok(cidadeAtual);
+            return ResponseEntity.ok(cidadeService.save(cidadeAtual));
         }
-
-        return ResponseEntity.notFound()
-                .build();
+        return ResponseEntity.notFound().build();
     }
 
     @RequestMapping(value = {"{cidadeId}"}, method = RequestMethod.DELETE)
