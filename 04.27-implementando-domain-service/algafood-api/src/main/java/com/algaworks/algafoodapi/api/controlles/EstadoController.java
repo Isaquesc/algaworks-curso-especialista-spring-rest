@@ -1,7 +1,7 @@
 package com.algaworks.algafoodapi.api.controlles;
 
 import com.algaworks.algafoodapi.domain.model.Estado;
-import com.algaworks.algafoodapi.domain.repository.interfaces.EstadoRepository;
+import com.algaworks.algafoodapi.domain.repository.EstadoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;

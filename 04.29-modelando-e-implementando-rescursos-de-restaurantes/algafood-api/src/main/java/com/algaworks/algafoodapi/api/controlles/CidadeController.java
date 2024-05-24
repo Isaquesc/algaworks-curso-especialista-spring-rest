@@ -2,7 +2,7 @@ package com.algaworks.algafoodapi.api.controlles;
 
 import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
 import com.algaworks.algafoodapi.domain.model.Cidade;
-import com.algaworks.algafoodapi.domain.repository.interfaces.CidadeRepository;
+import com.algaworks.algafoodapi.domain.repository.CidadeRepository;
 import com.algaworks.algafoodapi.domain.service.CidadeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

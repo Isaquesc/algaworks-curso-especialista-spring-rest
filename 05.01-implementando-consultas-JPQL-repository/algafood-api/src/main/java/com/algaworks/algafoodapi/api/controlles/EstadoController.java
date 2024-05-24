@@ -2,7 +2,7 @@ package com.algaworks.algafoodapi.api.controlles;
 
 import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
 import com.algaworks.algafoodapi.domain.model.Estado;
-import com.algaworks.algafoodapi.domain.repository.interfaces.EstadoRepository;
+import com.algaworks.algafoodapi.domain.repository.EstadoRepository;
 import com.algaworks.algafoodapi.domain.service.EstadoService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

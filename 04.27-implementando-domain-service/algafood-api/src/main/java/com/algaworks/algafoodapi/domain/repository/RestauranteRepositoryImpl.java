@@ -1,6 +1,5 @@
 package com.algaworks.algafoodapi.domain.repository;
 
-import com.algaworks.algafoodapi.domain.repository.interfaces.RestauranteRepository;
 import com.algaworks.algafoodapi.domain.model.Restaurante;
 import org.springframework.transaction.annotation.Transactional;
 

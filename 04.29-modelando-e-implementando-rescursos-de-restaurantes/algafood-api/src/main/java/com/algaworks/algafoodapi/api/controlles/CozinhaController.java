@@ -3,7 +3,7 @@ package com.algaworks.algafoodapi.api.controlles;
 import com.algaworks.algafoodapi.api.model.CozinhaXMLWrapper;
 import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
 import com.algaworks.algafoodapi.domain.model.Cozinha;
-import com.algaworks.algafoodapi.domain.repository.interfaces.CozinhaRepository;
+import com.algaworks.algafoodapi.domain.repository.CozinhaRepository;
 import com.algaworks.algafoodapi.domain.service.CozinhaService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

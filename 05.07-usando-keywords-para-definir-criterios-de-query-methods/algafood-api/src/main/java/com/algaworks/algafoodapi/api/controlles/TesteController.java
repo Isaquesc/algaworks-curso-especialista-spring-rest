@@ -2,8 +2,8 @@ package com.algaworks.algafoodapi.api.controlles;
 
 import com.algaworks.algafoodapi.domain.model.Cozinha;
 import com.algaworks.algafoodapi.domain.model.Restaurante;
-import com.algaworks.algafoodapi.domain.repository.interfaces.CozinhaRepository;
-import com.algaworks.algafoodapi.domain.repository.interfaces.RestauranteRepository;
+import com.algaworks.algafoodapi.domain.repository.CozinhaRepository;
+import com.algaworks.algafoodapi.domain.repository.RestauranteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,7 +46,7 @@ public class TesteController {
 
     @GetMapping("/restaurantes/nome-id-cozinha")
     public List<Restaurante> restauranteByNomeByCozinhaId(@RequestParam String nome, @RequestParam Long id) {
-        return restauranteRepository.findByNomeContainingAndCozinhaId(nome, id);
+        return restauranteRepository.consultarPorNome(nome, id);
     }
 
     @GetMapping("/restaurantes/primeiro-nome")
