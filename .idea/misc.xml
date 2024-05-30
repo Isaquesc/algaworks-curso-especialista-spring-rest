@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/05.07-usando-keywords-para-definir-criterios-de-query-methods/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.10-externalizando-consultas-JPQL-arquivo-XML/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.11-implementando-repository-customizado/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/05.12-implementando-consulta-dinamica-com-JPQL/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
