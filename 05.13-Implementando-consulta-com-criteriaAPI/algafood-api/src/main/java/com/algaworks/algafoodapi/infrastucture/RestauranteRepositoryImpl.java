@@ -12,6 +12,8 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
@@ -29,10 +31,15 @@ public class RestauranteRepositoryImpl implements RestauranteRepositoryQuerys {
                                                     BigDecimal taxaFinal) {
 
         CriteriaBuilder criteriaBuilder = manager.getCriteriaBuilder();
-
         CriteriaQuery<Restaurante> criteriaQuery = criteriaBuilder.createQuery(Restaurante.class);
-        criteriaQuery.from(Restaurante.class);
 
+        Root<Restaurante> root = criteriaQuery.from(Restaurante.class);
+
+        Predicate nomePredicate = criteriaBuilder.like(root.get("nome"), "%" + nome + "%");
+        Predicate taxaInicialPredicate = criteriaBuilder.greaterThanOrEqualTo(root.get("TaxaFrete"), taxaInicial);
+        Predicate taxaFinalPredicate = criteriaBuilder.lessThanOrEqualTo(root.get("TaxaFrete"), taxaFinal);
+
+        CriteriaQuery<Restaurante> where = criteriaQuery.where(nomePredicate, taxaInicialPredicate, taxaFinalPredicate);
         return manager.createQuery(criteriaQuery).getResultList();
     }
 }
