@@ -53,6 +53,7 @@
         <option value="$PROJECT_DIR$/05.11-implementando-repository-customizado/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.12-implementando-consulta-dinamica-com-JPQL/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.13-Implementando-consulta-com-criteriaAPI/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/05.14-Implementando-consulta-dinamica-com-criteriaAPI/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
