@@ -57,6 +57,6 @@
     <file url="file://$PROJECT_DIR$/05.11-implementando-repository-customizado/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05.12-implementando-consulta-dinamica-com-JPQL/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05.13-Implementando-consulta-com-criteriaAPI/algafood-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/05.14-implementando-specifications/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05.17-implementando-specifications/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
