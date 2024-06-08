@@ -59,6 +59,7 @@
         <option value="$PROJECT_DIR$/05.19-injetando-repositorio-anotacao-lazy/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.20-estendendo-jparepository-customizando-jpa-base/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.21-mapeando-relacionamento-bidirecional-com-one-to-many/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/05.22-mapeando-relacionamento-bidirecional-com-many-to-many/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
