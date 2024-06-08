@@ -40,6 +40,7 @@
         <module name="algafood-api (8)" />
         <module name="algafood-api-artifactId (17)" />
         <module name="algafood-api-artifactId (7)" />
+        <module name="algafood-api-artifactId (29)" />
         <module name="algafood-api (2)" />
         <module name="algafood-api (13)" />
         <module name="algafood-api-artifactId (11)" />
@@ -95,6 +96,7 @@
       <module name="algafood-api-artifactId (26)" options="-parameters" />
       <module name="algafood-api-artifactId (27)" options="-parameters" />
       <module name="algafood-api-artifactId (28)" options="-parameters" />
+      <module name="algafood-api-artifactId (29)" options="-parameters" />
       <module name="algafood-api-artifactId (3)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
       <module name="algafood-api-artifactId (5)" options="-parameters" />

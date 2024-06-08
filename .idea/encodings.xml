@@ -61,5 +61,6 @@
     <file url="file://$PROJECT_DIR$/05.17-implementando-specifications/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05.18-criando-fabrica-de-specifications/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05.19-injetando-repositorio-anotacao-lazy/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05.20-estendendo-jparepository-customizando-jpa-base/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
