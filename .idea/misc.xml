@@ -61,6 +61,7 @@
         <option value="$PROJECT_DIR$/05.21-mapeando-relacionamento-bidirecional-com-one-to-many/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.22-mapeando-relacionamento-bidirecional-com-many-to-many/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.23-mapeando-classes-incorporaveis-com-embedded-embeddable/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/05.24-mapeando-propriedades-com-creationtimestamp-uptadetimestamp/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
