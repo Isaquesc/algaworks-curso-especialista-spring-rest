@@ -7,52 +7,53 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algafood-api-artifactId (30)" />
         <module name="algafood-api-artifactId (20)" />
-        <module name="algafood-api-artifactId (10)" />
         <module name="algafood-api-artifactId (32)" />
-        <module name="algafood-api-artifactId (2)" />
         <module name="algafood-api-artifactId (4)" />
-        <module name="algafood-api-artifactId (26)" />
-        <module name="algafood-api (7)" />
         <module name="algafood-api-artifactId (16)" />
-        <module name="algafood-api-artifactId (6)" />
         <module name="algafood-api-artifactId (28)" />
         <module name="algafood-api (9)" />
-        <module name="algafood-api-artifactId (18)" />
         <module name="algafood-api-artifactId (8)" />
-        <module name="algafood-api-artifactId (22)" />
-        <module name="algafood-api (3)" />
         <module name="algafood-api (14)" />
         <module name="algafood-api-artifactId (12)" />
         <module name="algafood-api-artifactId (24)" />
         <module name="algafood-api (5)" />
-        <module name="algafood-api-artifactId (14)" />
         <module name="algafood-api (10)" />
         <module name="algafood-api (1)" />
-        <module name="algafood-api (12)" />
-        <module name="algafood-api-artifactId (31)" />
         <module name="algafood-api-artifactId (21)" />
         <module name="algafood-api-artifactId" />
         <module name="algafood-api-artifactId (1)" />
-        <module name="algafood-api-artifactId (3)" />
         <module name="algafood-api (6)" />
-        <module name="algafood-api-artifactId (15)" />
         <module name="algafood-api-artifactId (5)" />
-        <module name="algafood-api-artifactId (27)" />
-        <module name="algafood-api (8)" />
         <module name="algafood-api-artifactId (17)" />
-        <module name="algafood-api-artifactId (7)" />
         <module name="algafood-api-artifactId (29)" />
         <module name="algafood-api (2)" />
         <module name="algafood-api (13)" />
-        <module name="algafood-api-artifactId (11)" />
         <module name="algafood-api-artifactId (33)" />
         <module name="algafood-api-artifactId (9)" />
-        <module name="algafood-api-artifactId (23)" />
-        <module name="algafood-api (4)" />
         <module name="algafood-api-artifactId (13)" />
         <module name="algafood-api-artifactId (25)" />
+        <module name="algafood-api-artifactId (30)" />
+        <module name="algafood-api-artifactId (10)" />
+        <module name="algafood-api-artifactId (2)" />
+        <module name="algafood-api-artifactId (26)" />
+        <module name="algafood-api (7)" />
+        <module name="algafood-api-artifactId (6)" />
+        <module name="algafood-api-artifactId (18)" />
+        <module name="algafood-api-artifactId (22)" />
+        <module name="algafood-api (3)" />
+        <module name="algafood-api-artifactId (34)" />
+        <module name="algafood-api-artifactId (14)" />
+        <module name="algafood-api (12)" />
+        <module name="algafood-api-artifactId (31)" />
+        <module name="algafood-api-artifactId (3)" />
+        <module name="algafood-api-artifactId (15)" />
+        <module name="algafood-api-artifactId (27)" />
+        <module name="algafood-api (8)" />
+        <module name="algafood-api-artifactId (7)" />
+        <module name="algafood-api-artifactId (11)" />
+        <module name="algafood-api-artifactId (23)" />
+        <module name="algafood-api (4)" />
         <module name="algafood-api (11)" />
         <module name="algafood-api-artifactId (19)" />
       </profile>
@@ -106,6 +107,7 @@
       <module name="algafood-api-artifactId (31)" options="-parameters" />
       <module name="algafood-api-artifactId (32)" options="-parameters" />
       <module name="algafood-api-artifactId (33)" options="-parameters" />
+      <module name="algafood-api-artifactId (34)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
       <module name="algafood-api-artifactId (5)" options="-parameters" />
       <module name="algafood-api-artifactId (6)" options="-parameters" />
