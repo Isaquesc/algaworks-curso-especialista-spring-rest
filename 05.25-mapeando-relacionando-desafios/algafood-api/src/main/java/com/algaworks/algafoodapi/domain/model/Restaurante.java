@@ -1,5 +1,6 @@
 package com.algaworks.algafoodapi.domain.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.CreationTimestamp;
@@ -43,6 +44,10 @@ public class Restaurante {
 
     @Embedded
     private Endereco endereco;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "restaurante")
+    private List<Produto> produtos;
 
     @ManyToMany
     @JoinTable(name = "restaurante_forma_pagamento",
