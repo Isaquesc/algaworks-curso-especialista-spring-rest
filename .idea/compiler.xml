@@ -18,6 +18,7 @@
         <module name="algafood-api-artifactId (12)" />
         <module name="algafood-api-artifactId (24)" />
         <module name="algafood-api (5)" />
+        <module name="algafood-api-artifactId (36)" />
         <module name="algafood-api (10)" />
         <module name="algafood-api (1)" />
         <module name="algafood-api-artifactId (21)" />
@@ -54,6 +55,7 @@
         <module name="algafood-api-artifactId (11)" />
         <module name="algafood-api-artifactId (23)" />
         <module name="algafood-api (4)" />
+        <module name="algafood-api-artifactId (35)" />
         <module name="algafood-api (11)" />
         <module name="algafood-api-artifactId (19)" />
       </profile>
@@ -108,6 +110,8 @@
       <module name="algafood-api-artifactId (32)" options="-parameters" />
       <module name="algafood-api-artifactId (33)" options="-parameters" />
       <module name="algafood-api-artifactId (34)" options="-parameters" />
+      <module name="algafood-api-artifactId (35)" options="-parameters" />
+      <module name="algafood-api-artifactId (36)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
       <module name="algafood-api-artifactId (5)" options="-parameters" />
       <module name="algafood-api-artifactId (6)" options="-parameters" />

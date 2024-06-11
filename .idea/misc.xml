@@ -64,6 +64,8 @@
         <option value="$PROJECT_DIR$/05.24-mapeando-propriedades-com-creationtimestamp-uptadetimestamp/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.25-mapeando-entity-produto/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/05.25-mapeando-relacionando-desafios/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/06.12-alterando-a-estrategia-de-fetching-para-lazy-loading/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/06.13-alterando-a-estrategia-de-fetching-para-eager-loading/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
