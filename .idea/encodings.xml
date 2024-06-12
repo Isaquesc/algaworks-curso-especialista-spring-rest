@@ -70,5 +70,6 @@
     <file url="file://$PROJECT_DIR$/06.12-alterando-a-estrategia-de-fetching-para-lazy-loading/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/06.13-alterando-a-estrategia-de-fetching-para-eager-loading/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/06.14-resolvendo-o-problema-do-n-1-com-fetch-join-na-jpql/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07.06-adicionando-flyway-no-projeto/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>

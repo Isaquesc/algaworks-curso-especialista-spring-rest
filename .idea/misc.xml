@@ -67,6 +67,8 @@
         <option value="$PROJECT_DIR$/06.12-alterando-a-estrategia-de-fetching-para-lazy-loading/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/06.13-alterando-a-estrategia-de-fetching-para-eager-loading/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/06.14-resolvendo-o-problema-do-n-1-com-fetch-join-na-jpql/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/07.06-adicionando-flyway-no-projeto-e-criando-a-primeira-migracao/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/07.06-adicionando-flyway-no-projeto/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
