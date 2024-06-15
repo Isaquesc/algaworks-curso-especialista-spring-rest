@@ -42,5 +42,7 @@ create table item_pedido
     primary key (id)
 ) engine=InnoDB;
 
-alter table item_pedido add constraint fk_item_pedido_pedido foreign key (pedido_id) references pedido (id);
-alter table item_pedido add constraint fk_item_pedido_produto foreign key (produto_id) references produto (id);
+alter table item_pedido
+    add constraint fk_item_pedido_pedido foreign key (pedido_id) references pedido (id);
+alter table item_pedido
+    add constraint fk_item_pedido_produto foreign key (produto_id) references produto (id);
