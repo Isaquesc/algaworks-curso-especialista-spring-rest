@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/06.14-resolvendo-o-problema-do-n-1-com-fetch-join-na-jpql/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/07.06-adicionando-flyway-no-projeto-e-criando-a-primeira-migracao/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/07.06-adicionando-flyway-no-projeto/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/07.12-desafio-criando-migracoes-mapeando-entidades-pedido-item-pedido/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

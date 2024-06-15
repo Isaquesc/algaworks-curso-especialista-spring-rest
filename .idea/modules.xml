@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/05.22-mapeando-relacionamento-bidirecional-com-many-to-many/algafood-api/algafood-api-artifactId (31).iml" filepath="$PROJECT_DIR$/05.22-mapeando-relacionamento-bidirecional-com-many-to-many/algafood-api/algafood-api-artifactId (31).iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/algaworks-curso-especialista-spring-rest.iml" filepath="$PROJECT_DIR$/.idea/algaworks-curso-especialista-spring-rest.iml" />
     </modules>
   </component>
