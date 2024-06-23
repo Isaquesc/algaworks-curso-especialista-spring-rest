@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algafood-api-artifactId (40)" />
         <module name="algafood-api-artifactId (20)" />
         <module name="algafood-api-artifactId (32)" />
         <module name="algafood-api-artifactId (4)" />
@@ -119,6 +120,7 @@
       <module name="algafood-api-artifactId (38)" options="-parameters" />
       <module name="algafood-api-artifactId (39)" options="-parameters" />
       <module name="algafood-api-artifactId (4)" options="-parameters" />
+      <module name="algafood-api-artifactId (40)" options="-parameters" />
       <module name="algafood-api-artifactId (5)" options="-parameters" />
       <module name="algafood-api-artifactId (6)" options="-parameters" />
       <module name="algafood-api-artifactId (7)" options="-parameters" />
