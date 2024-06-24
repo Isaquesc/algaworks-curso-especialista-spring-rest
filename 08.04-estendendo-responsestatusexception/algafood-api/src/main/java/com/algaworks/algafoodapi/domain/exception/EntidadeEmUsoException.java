@@ -1,0 +1,17 @@
+package com.algaworks.algafoodapi.domain.exception;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
+
+public class EntidadeEmUsoException extends ResponseStatusException {
+
+    private static final long serialVersionUID = 1L;
+
+    public EntidadeEmUsoException(HttpStatus status, String msg) {
+        super(status, msg);
+    }
+
+    public EntidadeEmUsoException(String msg) {
+        super(HttpStatus.CONFLICT, msg);
+    }
+}

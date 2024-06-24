@@ -61,7 +61,7 @@ public class CozinhaController {
 
     @RequestMapping(value = "{cozinhaId}", method = PUT)
     public ResponseEntity<Cozinha> update(@PathVariable Long cozinhaId,
-                                          @RequestBody Cozinha cozinha) {
+                                             @RequestBody Cozinha cozinha) {
         Optional<Cozinha> cozinhaAtualizada = repository.findById(cozinhaId);
 
         if (cozinhaAtualizada.isEmpty())
@@ -87,7 +87,11 @@ public class CozinhaController {
     @RequestMapping(value = {"{cozinhaId}"}, method = DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remove(@PathVariable Long cozinhaId) {
-        service.remove(cozinhaId);
+        try {
+            service.remove(cozinhaId);
+        }catch (EntidadeNaoEnconstradaException e){
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, e.getMessage());
+        }
     }
 }
 
