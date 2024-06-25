@@ -58,11 +58,27 @@ public class CozinhaController {
     @RequestMapping(value = "{cozinhaId}", method = PUT)
     public ResponseEntity<Cozinha> update(@PathVariable Long cozinhaId,
                                           @RequestBody Cozinha cozinha) {
-        var cozinhaAtualizada = service.buscarOuFalhar(cozinhaId);
-        BeanUtils.copyProperties(cozinha, cozinhaAtualizada, "id");
+        Optional<Cozinha> cozinhaAtualizada = repository.findById(cozinhaId);
 
-        return ResponseEntity.ok(service.save(cozinhaAtualizada));
+        if (cozinhaAtualizada.isEmpty())
+            return ResponseEntity.notFound().build();
+
+        BeanUtils.copyProperties(cozinha, cozinhaAtualizada.get(), "id");
+        return ResponseEntity.ok(service.save(cozinhaAtualizada.get()));
     }
+
+//    @RequestMapping(value = {"{cozinhaId}"}, method = DELETE)
+//    public ResponseEntity<Cozinha> remove(@PathVariable Long cozinhaId) {
+//        try {
+//            service.remove(cozinhaId);
+//            return ResponseEntity.noContent().build();
+//
+//        } catch (DataIntegrityViolationException e) {
+//            return ResponseEntity.status(HttpStatus.CONFLICT).build();
+//        } catch (EntidadeNaoEnconstradaException e) {
+//            return ResponseEntity.notFound().build();
+//        }
+//    }
 
     @RequestMapping(value = {"{cozinhaId}"}, method = DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)

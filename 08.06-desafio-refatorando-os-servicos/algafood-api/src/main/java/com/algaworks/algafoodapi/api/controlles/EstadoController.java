@@ -29,6 +29,7 @@ public class EstadoController {
         this.estadoRepository = estadoRepository;
     }
 
+
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity<List<Estado>> findAll() {
         return ResponseEntity.ok(estadoRepository.findAll());
@@ -36,29 +37,50 @@ public class EstadoController {
 
     @RequestMapping(value = "/{estadoId}", method = RequestMethod.GET)
     public ResponseEntity<?> findByID(@PathVariable Long estadoId) {
-        var estado = estadoService.buscarOuFalhar(estadoId);
+        Optional<Estado> estado = estadoRepository.findById(estadoId);
+
+        if (estado.isEmpty())
+            return ResponseEntity.notFound().build();
+
         return ResponseEntity.ok(estado);
     }
 
     @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> save(@RequestBody Estado estado) {
-        Estado save = estadoService.save(estado);
+        try {
+            Estado save = estadoService.save(estado);
 
-        return ResponseEntity.status(HttpStatus.ACCEPTED)
-                .body(save);
+            return ResponseEntity.status(HttpStatus.ACCEPTED)
+                    .body(save);
+
+        } catch (EntidadeNaoEnconstradaException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
     }
 
     @RequestMapping(value = "/{estadoId}", method = RequestMethod.PUT)
     public ResponseEntity<?> atualizar(@PathVariable Long estadoId, @RequestBody Estado estado) {
-        var estadoAtual = estadoService.buscarOuFalhar(estadoId);
-        BeanUtils.copyProperties(estado, estadoAtual, "id");
+        Optional<Estado> estadoAtual = estadoRepository.findById(estadoId);
 
-        return ResponseEntity.ok(estadoService.save(estadoAtual));
+        if (estadoAtual.isPresent()) {
+            BeanUtils.copyProperties(estado, estadoAtual.get(), "id");
+            return ResponseEntity.ok(estadoService.save(estadoAtual.get()));
+        }
+
+        return ResponseEntity.notFound()
+                .build();
     }
 
     @RequestMapping(value = {"{estadoId}"}, method = RequestMethod.DELETE)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void remove(@PathVariable Long estadoId) {
-        estadoService.remove(estadoId);
+    public ResponseEntity<Estado> remove(@PathVariable Long estadoId) {
+        try {
+            estadoService.remove(estadoId);
+            return ResponseEntity.noContent().build();
+
+        } catch (DataIntegrityViolationException e) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).build();
+        } catch (EntidadeNaoEnconstradaException e) {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
