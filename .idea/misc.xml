@@ -73,6 +73,7 @@
         <option value="$PROJECT_DIR$/08.02-lancando-excecoes-customizadas-anotadas-com-responsestatus/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.03-lancando-excecoes-do-tipo-responsestatusexception/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.04-estendendo-responsestatusexception/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.05-simplificando-o-codigo-com-uso-de-responsabilidade-em-exceptions/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

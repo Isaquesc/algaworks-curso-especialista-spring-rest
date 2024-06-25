@@ -75,5 +75,6 @@
     <file url="file://$PROJECT_DIR$/08.02-lancando-excecoes-customizadas-anotadas-com-responsestatus/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.03-lancando-excecoes-do-tipo-responsestatusexception/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.04-estendendo-responsestatusexception/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08.05-simplificando-o-codigo-com-uso-de-responsabilidade-em-exceptions/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
