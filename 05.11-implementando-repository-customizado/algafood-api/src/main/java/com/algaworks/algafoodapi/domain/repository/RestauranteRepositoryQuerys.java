@@ -9,5 +9,5 @@ import java.util.List;
 @Repository
 public interface RestauranteRepositoryQuerys {
 
-    List<Restaurante> buscarPorNomeTaxaFrete2(String nome, BigDecimal taxaInicial, BigDecimal taxaFinal);
+    List<Restaurante> buscarPorNomeTaxaFrete(String nome, BigDecimal taxaInicial, BigDecimal taxaFinal);
 }

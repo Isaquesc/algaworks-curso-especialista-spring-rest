@@ -74,6 +74,9 @@
         <option value="$PROJECT_DIR$/08.03-lancando-excecoes-do-tipo-responsestatusexception/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.04-estendendo-responsestatusexception/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.05-simplificando-o-codigo-com-uso-de-responsabilidade-em-exceptions/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/05.17-implementando-specifications/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.06-desafio-refatorando-os-servicos/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.06-desafio-refatorando-servicos-rest/algafood-api/pom.xml" />
       </list>
     </option>
   </component>

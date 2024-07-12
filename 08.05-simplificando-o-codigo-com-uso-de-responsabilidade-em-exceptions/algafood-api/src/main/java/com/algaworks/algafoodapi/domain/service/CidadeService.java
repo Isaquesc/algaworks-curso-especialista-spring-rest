@@ -49,8 +49,7 @@ public class CidadeService {
     }
 
     public Cidade buscarOuFalhar(Long cidadeId) {
-        return repositoryCidade.findById(cidadeId)
-                .orElseThrow(() ->
+        return repositoryCidade.findById(cidadeId).orElseThrow(() ->
                         new EntidadeNaoEnconstradaException(String.format(MSG_CIDADE_NAO_ENCONTRADA, cidadeId)));
     }
 }

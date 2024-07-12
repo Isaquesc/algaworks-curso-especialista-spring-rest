@@ -43,8 +43,7 @@ public class CozinhaService {
 
     public Cozinha buscarOuFalhar(Long cozinhaId) {
         return repository.findById(cozinhaId)
-                .orElseThrow(() ->
-                        new EntidadeNaoEnconstradaException(
-                                String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)));
+                .orElseThrow(() -> new EntidadeNaoEnconstradaException(
+                        String.format(MSG_COZINHA_NAO_ENCONTRADA, cozinhaId)));
     }
 }

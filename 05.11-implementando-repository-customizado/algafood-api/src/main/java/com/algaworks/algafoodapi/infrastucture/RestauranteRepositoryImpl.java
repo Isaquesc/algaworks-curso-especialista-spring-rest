@@ -18,8 +18,8 @@ public class RestauranteRepositoryImpl implements RestauranteRepositoryQuerys {
 
     @Override
     public List<Restaurante> buscarPorNomeTaxaFrete(String nome,
-                                                       BigDecimal taxaInicial,
-                                                       BigDecimal taxaFinal) {
+                                                    BigDecimal taxaInicial,
+                                                    BigDecimal taxaFinal) {
         var jpql = "from Restaurante where nome like :nome and taxaFrete between :taxaInicial and :taxaFinal";
 
         return manager.createQuery(jpql, Restaurante.class)
