@@ -1,5 +1,7 @@
 package com.algaworks.algafoodapi.api.controlles;
 
+import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
+import com.algaworks.algafoodapi.domain.exception.NegocioException;
 import com.algaworks.algafoodapi.domain.model.Cidade;
 import com.algaworks.algafoodapi.domain.repository.CidadeRepository;
 import com.algaworks.algafoodapi.domain.service.CidadeService;
@@ -39,7 +41,11 @@ public class CidadeController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Cidade save(@RequestBody Cidade cidade) {
-        return cidadeService.save(cidade);
+        try {
+            return cidadeService.save(cidade);
+        }catch (EntidadeNaoEnconstradaException ex){
+            throw new NegocioException(ex.getMessage());
+        }
     }
 
     @RequestMapping(value = "/{cidadeId}", method = RequestMethod.PUT)
@@ -47,7 +53,11 @@ public class CidadeController {
         Cidade cidadeAtual = cidadeService.buscarOuFalhar(cidadeId);
         BeanUtils.copyProperties(cidade, cidadeAtual, "id");
 
-        return ResponseEntity.ok(cidadeService.save(cidadeAtual));
+        try {
+            return ResponseEntity.ok(cidadeService.save(cidadeAtual));
+        }catch (EntidadeNaoEnconstradaException ex){
+            throw new NegocioException(ex.getMessage());
+        }
     }
 
     @RequestMapping(value = {"{cidadeId}"}, method = RequestMethod.DELETE)

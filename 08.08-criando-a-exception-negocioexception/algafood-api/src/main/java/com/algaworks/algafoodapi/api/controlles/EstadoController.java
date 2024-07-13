@@ -1,6 +1,7 @@
 package com.algaworks.algafoodapi.api.controlles;
 
 import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
+import com.algaworks.algafoodapi.domain.exception.NegocioException;
 import com.algaworks.algafoodapi.domain.model.Estado;
 import com.algaworks.algafoodapi.domain.repository.EstadoRepository;
 import com.algaworks.algafoodapi.domain.service.EstadoService;
@@ -43,8 +44,11 @@ public class EstadoController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public Estado save(@RequestBody Estado estado) {
-       return estadoService.save(estado);
-
+        try {
+            return estadoService.save(estado);
+        }catch (EntidadeNaoEnconstradaException ex){
+            throw new NegocioException(ex.getMessage());
+        }
     }
 
     @RequestMapping(value = "/{estadoId}", method = RequestMethod.PUT)
@@ -52,7 +56,11 @@ public class EstadoController {
         var estadoAtual = estadoService.buscarOuFalhar(estadoId);
         BeanUtils.copyProperties(estado, estadoAtual, "id");
 
-        return ResponseEntity.ok(estadoService.save(estadoAtual));
+        try {
+            return ResponseEntity.ok(estadoService.save(estadoAtual));
+        } catch (EntidadeNaoEnconstradaException ex) {
+            throw new NegocioException(ex.getMessage());
+        }
     }
 
     @RequestMapping(value = {"{estadoId}"}, method = RequestMethod.DELETE)
@@ -61,3 +69,4 @@ public class EstadoController {
         estadoService.remove(estadoId);
     }
 }
+
