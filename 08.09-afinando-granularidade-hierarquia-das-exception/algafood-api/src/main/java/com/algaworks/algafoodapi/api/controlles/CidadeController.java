@@ -1,6 +1,6 @@
 package com.algaworks.algafoodapi.api.controlles;
 
-import com.algaworks.algafoodapi.domain.exception.EntidadeNaoEnconstradaException;
+import com.algaworks.algafoodapi.domain.exception.EstadoNaoEncontradoException;
 import com.algaworks.algafoodapi.domain.exception.NegocioException;
 import com.algaworks.algafoodapi.domain.model.Cidade;
 import com.algaworks.algafoodapi.domain.repository.CidadeRepository;
@@ -18,9 +18,9 @@ import java.util.List;
 @RequestMapping("/cidades")
 public class CidadeController {
 
-    private final CidadeService cidadeService;
+    private CidadeService cidadeService;
 
-    private final CidadeRepository cidadeRepository;
+    private CidadeRepository cidadeRepository;
 
     @Autowired
     public CidadeController(CidadeService cidadeService, CidadeRepository cidadeRepository) {
@@ -43,7 +43,7 @@ public class CidadeController {
     public Cidade save(@RequestBody Cidade cidade) {
         try {
             return cidadeService.save(cidade);
-        }catch (EntidadeNaoEnconstradaException ex){
+        }catch (EstadoNaoEncontradoException ex){
             throw new NegocioException(ex.getMessage());
         }
     }
@@ -55,7 +55,7 @@ public class CidadeController {
 
         try {
             return ResponseEntity.ok(cidadeService.save(cidadeAtual));
-        }catch (EntidadeNaoEnconstradaException ex){
+        }catch (EstadoNaoEncontradoException ex){
             throw new NegocioException(ex.getMessage());
         }
     }
