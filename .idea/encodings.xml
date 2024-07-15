@@ -81,5 +81,6 @@
     <file url="file://$PROJECT_DIR$/08.08-criando-a-exception-negocioexception/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.09-afinando-granularidade-hierarquia-das-exception/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08.13-tratamento-excecoes-globais-com-exception-handler-e-controller-advice/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
