@@ -89,5 +89,6 @@
     <file url="file://$PROJECT_DIR$/08.20-customizando-exception-handlers-do-response-entity-exception-handler/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.21-habilitando-lancamento-de-exception-para-propriedades-desconhecidas-ou-ignoradas/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.23-desafio-tratando-propertybindingexception-na-desserializacao/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08.24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
