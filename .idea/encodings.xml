@@ -84,5 +84,6 @@
     <file url="file://$PROJECT_DIR$/08.13-tratamento-excecoes-globais-com-exception-handler-e-controller-advice/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.14-desafio-implementando-exception-handler/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/08.15-criando-exception-handler-global-com-response-entity-exception-handler/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08.16-customizando-corpo-da-reposta-padrao-do-response-entity-exception-handler/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
