@@ -86,6 +86,7 @@
         <option value="$PROJECT_DIR$/08.16-customizando-corpo-da-reposta-padrao-do-response-entity-exception-handler/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.18-padronizando-o-formato-de-problem-no-corpo-da-resposta-com-rfc7807/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.20-customizando-exception-handlers-do-response-entity-exception-handler/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.21-habilitando-lancamento-de-exception-para-propriedades-desconhecidas-ou-ignoradas/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
