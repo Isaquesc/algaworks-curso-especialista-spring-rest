@@ -12,7 +12,7 @@
     <groupId>com.algaworks</groupId>
     <artifactId>algafood-api-artifactId</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>algafood-api-08.14</name>
+    <name>algafood-api-08.15</name>
     <description>API delivery de comida</description>
 
     <properties>

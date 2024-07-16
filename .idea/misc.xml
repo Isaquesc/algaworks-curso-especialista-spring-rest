@@ -81,6 +81,8 @@
         <option value="$PROJECT_DIR$/08.09-afinando-granularidade-hierarquia-das-exception/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.12-tratando-excecoes-em-nivel-de-controlador-com-exceptionhandler/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.13-tratamento-excecoes-globais-com-exception-handler-e-controller-advice/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.14-desafio-implementando-exception-handler/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.15-criando-exception-handler-global-com-response-entity-exception-handler/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
