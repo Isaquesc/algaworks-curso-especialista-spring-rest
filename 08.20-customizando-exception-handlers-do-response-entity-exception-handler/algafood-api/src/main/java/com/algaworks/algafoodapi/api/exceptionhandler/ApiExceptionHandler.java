@@ -18,6 +18,16 @@ import java.time.LocalDateTime;
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
 
+    @Override
+    protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+
+        var problemType = ProblemType.MENSAGEM_INCOMPREENSIVEL;
+        var details = "O corpo da requisição está inválido. Verifique erro de sintaxe.";
+        Problem problem = getProblemBuilder(status, problemType, details).build();
+
+        return handleExceptionInternal(ex, problem, headers, status, request);
+    }
+
     @ExceptionHandler(EntidadeNaoEncontradaException.class)
     public ResponseEntity<?> handlerEntidadeNaoEncontradaException(EntidadeNaoEncontradaException ex, WebRequest request) {
         var status = HttpStatus.NOT_FOUND;
