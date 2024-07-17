@@ -6,7 +6,6 @@ import com.algaworks.algafoodapi.domain.exception.NegocioException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.fasterxml.jackson.databind.exc.PropertyBindingException;
-import com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpHeaders;
@@ -17,6 +16,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.util.List;
@@ -24,6 +24,15 @@ import java.util.stream.Collectors;
 
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
+    @Override
+    protected ResponseEntity<Object> handleNoHandlerFoundException(NoHandlerFoundException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
+
+        var problemType = ProblemType.RECURSO_NAO_ENCONTRADO;
+        var details = String.format("O recurso %s, que voce tentou acessar, é inexistente.", ex.getRequestURL());
+        var problem = getProblemBuilder(status, problemType, details).build();
+
+        return handleExceptionInternal(ex,problem, headers, status, request);
+    }
 
     @Override
     protected ResponseEntity<Object> handleTypeMismatch(TypeMismatchException ex, HttpHeaders headers, HttpStatus status, WebRequest request) {
@@ -55,7 +64,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
     @ExceptionHandler(EntidadeNaoEncontradaException.class)
     public ResponseEntity<Object> handlerEntidadeNaoEncontradaException(EntidadeNaoEncontradaException ex, WebRequest request) {
         var status = HttpStatus.NOT_FOUND;
-        var problemType = ProblemType.ENTIDADE_NAO_ENCONTRADA;
+        var problemType = ProblemType.RECURSO_NAO_ENCONTRADO;
         var problem = getProblemBuilder(status, problemType, ex.getMessage()).build();
 
         return handleExceptionInternal(ex, problem, new HttpHeaders(), status, request);
