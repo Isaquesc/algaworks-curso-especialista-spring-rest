@@ -89,6 +89,7 @@
         <option value="$PROJECT_DIR$/08.21-habilitando-lancamento-de-exception-para-propriedades-desconhecidas-ou-ignoradas/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.23-desafio-tratando-propertybindingexception-na-desserializacao/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.24-lancando-exception-de-desserializacao-na-atualizacao-parcial-patch/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/08.25-desafio-tratando-exception-de-parametro-de-url-invalido/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
