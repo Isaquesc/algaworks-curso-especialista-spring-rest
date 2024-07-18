@@ -94,6 +94,7 @@
         <option value="$PROJECT_DIR$/08.27-desafio-tratando-todas-as-exceptions-nao-capturadas/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.28-estendendo-o-formato-do-problema-para-adicionar-novas-propriedades/algafood-api/pom.xml" />
         <option value="$PROJECT_DIR$/08.29-desafio-estendendo-o-formato-do-problema/algafood-api/pom.xml" />
+        <option value="$PROJECT_DIR$/09.02-adicionando-constraints-e-validado-no-controller-com-valid/algafood-api/pom.xml" />
       </list>
     </option>
   </component>
