@@ -1,20 +1,17 @@
 package com.algaworks.algafoodapi.api.controlles;
 
-import com.algaworks.algafoodapi.api.model.CozinhaXMLWrapper;
 import com.algaworks.algafoodapi.domain.model.Cozinha;
 import com.algaworks.algafoodapi.domain.repository.CozinhaRepository;
 import com.algaworks.algafoodapi.domain.service.CozinhaService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static org.springframework.web.bind.annotation.RequestMethod.*;
-import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @RestController
 @RequestMapping(value = "/cozinhas")
@@ -35,10 +32,10 @@ public class CozinhaController {
         return cozinhaRepository.findAll();
     }
 
-    @RequestMapping(method = GET, produces = MediaType.APPLICATION_XML_VALUE)
-    public CozinhaXMLWrapper findAllXML() {
-        return new CozinhaXMLWrapper(cozinhaRepository.findAll());
-    }
+//    @RequestMapping(method = GET, produces = MediaType.APPLICATION_XML_VALUE)
+//    public CozinhaXMLWrapper findAllXML() {
+//        return new CozinhaXMLWrapper(cozinhaRepository.findAll());
+//    }
 
     @RequestMapping(value = "{cozinhaId}", method = GET)
     public ResponseEntity<Cozinha> findByID(@PathVariable Long cozinhaId) {

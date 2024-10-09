@@ -35,7 +35,6 @@ public class ApiExceptionHandler {
                 .body(problem);
     }
 
-
     @ExceptionHandler(HttpMediaTypeNotSupportedException.class)
     public ResponseEntity<?> handlerHttpMediaTypeNotSupportedException(HttpMediaTypeNotSupportedException e) {
         var problem = Problem.builder()
