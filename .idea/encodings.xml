@@ -98,5 +98,6 @@
     <file url="file://$PROJECT_DIR$/09.02-adicionando-constraints-e-validado-no-controller-com-valid/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09.03-desafio-tratando-exception-de-violacao-de-constraints-de-validacao/algafood-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09.04-estendendo-problem-para-adicionar-as-propriedades-com-constrains-violadas/algafood-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09.05-conhecendo-e-adicionando-mais-constraints-de-validacao-no-modelo/algafood-api/src/main/java" charset="UTF-8" />
   </component>
 </project>
